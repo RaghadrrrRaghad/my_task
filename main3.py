@@ -6,3 +6,5 @@ names.pop()
 print(names)
 names.append("Hamda")
 print(names)
+del names[2]
+print(names)
