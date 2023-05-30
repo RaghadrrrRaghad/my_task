@@ -73,3 +73,19 @@ def my_dictionary(k, v):
     return my_dictionary
 
 print(my_dictionary(keys, values))
+
+
+
+sample_dict = {
+    "class": {
+        "Student": {
+            "name": "Maik",
+            "marks": {
+                "physics": 70,
+                "history": 80
+            }
+        }
+    }
+}
+
+print(sample_dict["class"]["Student"]["marks"]["history"])
