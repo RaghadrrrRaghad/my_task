@@ -8,3 +8,10 @@ names.append("Hamda")
 print(names)
 del names[2]
 print(names)
+
+friends = ["Adel", "Ahmed"]
+employees = ["Samah", "Amjad"]
+School = ["Ali", "Basma"]
+
+friends.extend(employees + School)
+print(friends)
