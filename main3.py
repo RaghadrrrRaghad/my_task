@@ -29,3 +29,14 @@ dict3 = {'5': 50, '6': 60}
 
 new_dict = concatenate_dictionaries(dict1, dict2, dict3)
 print(new_dict)
+
+
+def square_of_the_keys():
+    my_dict = {}
+    for i in range(1, 16):
+        square = i*i
+        my_dict[i] = square
+
+    return my_dict
+
+print(square_of_the_keys())
