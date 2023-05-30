@@ -40,3 +40,21 @@ def square_of_the_keys():
     return my_dict
 
 print(square_of_the_keys())
+
+
+d1 = {'a': 100, 'b': 200, 'c': 300}
+d2 = {'a': 150, 'b': 200, 'd': 400}
+
+
+def combine_dictionaries(dict1, dict2):
+     combined_dict = dict1.copy()
+     for k, v in dict2.items():
+         if k in combined_dict:
+             combined_dict[k] += v
+         else:
+             combined_dict[k] = v
+
+     return combined_dict
+
+d = combine_dictionaries(d1, d2)
+print(d)
