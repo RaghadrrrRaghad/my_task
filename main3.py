@@ -58,3 +58,18 @@ def combine_dictionaries(dict1, dict2):
 
 d = combine_dictionaries(d1, d2)
 print(d)
+
+
+keys = ["Ten", "Twenty", "Thirty"]
+values = [10, 20, 30]
+
+def my_dictionary(k, v):
+    my_dictionary = {}
+    count = 0
+    for i in k:
+        my_dictionary[i] = v[count]
+        count+= 1
+
+    return my_dictionary
+
+print(my_dictionary(keys, values))
