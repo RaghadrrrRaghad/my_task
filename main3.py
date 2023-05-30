@@ -89,3 +89,13 @@ sample_dict = {
 }
 
 print(sample_dict["class"]["Student"]["marks"]["history"])
+
+
+myDict = {1: "Alaa", 5: "Hadeel", 7: "Hanin", 13: "Malak"}
+ne = ""
+for k in myDict:
+    if k <= 10:
+        ne += myDict[k]+"->"
+
+
+print(ne.strip("->"))
